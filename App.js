@@ -13,10 +13,18 @@ function App() {
 
   // }
   function btnFunc(e){
+    let amount=parseInt(index);
     // setIndex(e.target.value)
     // setIndex()
+    if(index<=0){
+      amount=1;
+    }
+    if(index>8){
+      amount=8;
+    }
     
-    setParagraph(text.slice(0,index))
+    
+    setParagraph(text.slice(0,amount))
   }
   
   return (
